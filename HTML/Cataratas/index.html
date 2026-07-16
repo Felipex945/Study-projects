@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iguazu Falls</title>
+    <style>
+        h1 {
+            font: normal 50px Times;
+            color: rgb(201, 156, 52);
+        }
+        h2 {
+            font: normal 20px Arial;
+            color: rgb(127, 150, 255);
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        button {
+            font: normal 30px Arial;
+            color: blue;
+            size: 20px;
+        }
+    </style>
+</head>
+<body> 
+    <h1 id="title">Welcome to an online tour about the Iguazu Falls!</h1>
+    <h2 id="sub-title">Iguazu Falls is a group of approximately 275 waterfalls on the Iguazu River, located on the border between Brazil (Paraná) and Argentina (Misiones). With drops reaching 80 meters in height, they form the largest waterfall system in the world in terms of extent.</h2>
+    
+    <img src="vista-cataratas-do-iguacu-scaled-1.jpg" alt="Iguazu">
+    <div id="information">
+        <button id="botao">
+            Click here to know more about it!
+        </button>
+    </div>
+
+    <script>
+        let botao = document.getElementById('botao')
+
+        botao.addEventListener('click', function(){
+        window.location.href = 'information.html'
+        });
+    </script>
+</body>
+</html>
